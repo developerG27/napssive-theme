@@ -1,24 +1,16 @@
 .form-search{
-    padding: 10px;
-    
-        input.input-text{
-        padding: 10px;
-        border-radius: 3px;
-        border: 0;
-        font-size: 1.2em;
-        margin-top: 20px;
-    }
-
+    position: relative;
     .button-submit{
-        border: 0;
-        background: transparent;
-        position:relative;
-
-        .button-font{
-            color: #fff;
-            font-size: 2em;
-            position:absolute;
-            top: -21px;
-        }
+       height: 30px;
+       margin-left: 60px;
+       padding-left:20px;
+       padding-right: 30px;
     }
-}
+    .button-font{
+       color: #748598;
+       font-size: 20px;
+       position: absolute;
+       right: 5px;
+       top: 7px;
+    }
+ }

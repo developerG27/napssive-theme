@@ -1,15 +1,16 @@
-@import '../scss/library/prism';
-@import '../scss/library/waves';
-@import 'component/badge';
-@import 'component/alert';
+@import 'component/reset';
 @import 'component/typebase';
 
-//Colori link
-$normal : black;
-$hover : black;
-$active :black;
-$visited : black;
-$focus: black;
+@import 'component/alert';
+@import 'component/aside';
+@import 'component/badge';
+@import 'component/card';
+@import 'component/coding';
+@import 'component/header';
+@import 'component/searchform';
+@import 'component/universal';
 
-//Background
-$primary: #FFFFFF;
+@import 'library/prism';
+@import 'library/waves';
+
+$white: #ffffff;

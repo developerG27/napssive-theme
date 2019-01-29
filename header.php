@@ -12,50 +12,36 @@
 	<?php wp_enqueue_script('NomeScript', '/script.js', false, '2.0', false );?>
 	
 	<title>
-		<?php 
-      if(is_home() ){
-        echo get_bloginfo('');
-      } else if(is_single()){
-        echo the_title();
-      } else{
-				echo get_bloginfo('');
-      }
+	<?php 
+    	if(is_home() ){
+        	echo get_bloginfo('');
+    	} else if(is_single()){
+        	echo the_title();
+      	} else{
+			echo get_bloginfo('');
+      	}
     ?>
 	</title>
 </head>
 <body>
 	<header class="header">
 		<div class="container">	
-
-			<!-- header nuovo -->
 			<div class="brand_search">
 				<a href="#"> <img src="img/compass/logo.png" class="brand" alt="compass-logo"> </a>
-				<div class="search_icon">
-						<?php get_search_form(); ?>
-				</div>
+
+				<?php get_search_form(); ?>
 			</div>
 
-
-
-			<?php get_search_form(); ?>
-
-			
-
-			<nav class="nav">
-				<ul>
-					<?php
-						wp_nav_menu(
-							array(
-								'menu' => 'primary',
-								'link_before' => '<li class="item">',
-								'link_after' => '</li',
-							)
-						);
-					?>
-				</ul>
-			</nav>
-
-
-			
+			<div class="box-icon">
+				<?php
+					wp_nav_menu(
+						array(
+							'menu' => 'primary',
+							'link_before' => '<li class="item">',
+							'link_after' => '</li',
+						)
+					);
+				?>
+			</div>
 		</div>
 	</header>
