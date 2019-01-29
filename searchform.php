@@ -2,10 +2,9 @@
 	<div class="searchform">
 		<label class="screen-reader-text" for="s"></label>
 		<input class="input-text" type="text" value="" name="s" id="s" placeholder="Cerca..">
-	
+		
 		<button type="submit" class="button-submit">
-			<i class="button-font fa fa-search"></i>
+		<i class="material-icons fa-search button-font"> search </i>
 		</button>
-</button>
 	</div>
 </form>

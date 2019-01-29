@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<?php wp_head() ?>
 	<!-- Font Awesome -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
 
 	<?php wp_enqueue_script('NomeScript', '/script.js', false, '2.0', false );?>
@@ -33,7 +33,10 @@
 			</div>
 
 			<div class="box-icon">
-		  		<p>Ciao</p>
+				<i class="material-icons fa-star"> star </i>
+				<i class="material-icons fa-star"> star </i>
+				<i class="material-icons fa-star"> star </i>
+				<i class="material-icons fa-star"> star </i>
 			</div>
 		</div>
 	</header>
