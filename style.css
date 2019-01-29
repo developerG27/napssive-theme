@@ -442,7 +442,6 @@ table td, table th {
     .aside ul li {
       color: #fff;
       font-size: 13.3px;
-      padding: 20px;
       cursor: pointer; }
       .aside ul li:hover {
         background-color: #263442; }
@@ -450,7 +449,9 @@ table td, table th {
         color: #ffffff;
         text-decoration: none;
         font-size: 1.4em;
-        line-height: 30px; }
+        line-height: 30px;
+        padding: 20px;
+        display: block; }
 
 .aside::-webkit-scrollbar {
   width: 0 !important; }
