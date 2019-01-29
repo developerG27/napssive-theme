@@ -1,19 +1,17 @@
-<?php 
-	$ricerca = $_GET['s'];
-	get_header(); 
-?>
+<?php
+/**
+ * Front to the WordPress application. This file doesn't do anything, but loads
+ * wp-blog-header.php which does and tells WordPress to load the theme.
+ *
+ * @package WordPress
+ */
 
+/**
+ * Tells WordPress to load the WordPress theme and output it.
+ *
+ * @var bool
+ */
+define('WP_USE_THEMES', true);
 
-<section class="main-container">
-	<?php get_sidebar();?>
-	<div class="row lg">
-		<div class="container">
-			<div class="card card-lg">
-				<h3>Articolo</h3>			
-			</div>
-		</div>
-	</div>
-</section>
-
-</body>
-</html>
+/** Loads the WordPress Environment and Template */
+require( dirname( __FILE__ ) . '/wp-blog-header.php' );
