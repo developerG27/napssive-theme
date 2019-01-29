@@ -9,4 +9,6 @@
 			</li>
 		</ul>
     <?php endwhile; endif; ?>
+
+    <?php wp_reset_query(); ?>
 </aside>
