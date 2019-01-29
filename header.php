@@ -27,21 +27,13 @@
 	<header class="header">
 		<div class="container">	
 			<div class="brand_search">
-				<a href="#"> <img src="img/compass/logo.png" class="brand" alt="compass-logo"> </a>
+				<a href="#"> <p> Compass </p> </a>
 
 				<?php get_search_form(); ?>
 			</div>
 
 			<div class="box-icon">
-				<?php
-					wp_nav_menu(
-						array(
-							'menu' => 'primary',
-							'link_before' => '<li class="item">',
-							'link_after' => '</li',
-						)
-					);
-				?>
+		  		<p>Ciao</p>
 			</div>
 		</div>
 	</header>

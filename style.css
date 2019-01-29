@@ -631,7 +631,6 @@ pre {
   position: sticky;
   top: 0px;
   z-index: 10;
-  box-shadow: 0px, 2px, 3px, -2px, #000026;
   display: flex;
   align-items: center; }
   .header .container {
@@ -645,7 +644,8 @@ pre {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      align-items: center; }
+      align-items: center;
+      width: 40%; }
       .header .container .brand_search .brand {
         width: 200px;
         height: 42px; }
@@ -667,6 +667,10 @@ pre {
 
 .form-search {
   position: relative; }
+  .form-search .searchform {
+    display: flex;
+    align-items: center;
+    flex-direction: row; }
   .form-search .button-submit {
     height: 30px;
     margin-left: 60px;

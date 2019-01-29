@@ -4,7 +4,6 @@
     position:sticky;
     top:0px;
     z-index: 10;
-    box-shadow: (0px, 2px, 3px, -2px, #000026);
     display: flex;
     align-items: center;
  
@@ -21,6 +20,7 @@
           flex-direction: row;
           justify-content: space-between;
           align-items: center;
+          width: 40%;
  
           .brand{
              width: 200px;
