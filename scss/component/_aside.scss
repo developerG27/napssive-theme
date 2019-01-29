@@ -22,7 +22,6 @@
             }
 
             .link{
-                @include unstyled-link();
                 display: flex;
 
                 i{

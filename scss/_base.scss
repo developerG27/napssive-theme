@@ -1,0 +1,15 @@
+@import '../scss/library/prism';
+@import '../scss/library/waves';
+@import 'component/badge';
+@import 'component/alert';
+@import 'component/typebase';
+
+//Colori link
+$normal : black;
+$hover : black;
+$active :black;
+$visited : black;
+$focus: black;
+
+//Background
+$primary: #FFFFFF;

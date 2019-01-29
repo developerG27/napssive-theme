@@ -1,0 +1,53 @@
+@import "base";
+
+body{
+   font-family: 'Poppins', sans-serif;
+   box-sizing: border-box !important;
+}
+
+@import 'component/header';
+
+.main-container{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+
+   @import 'component/aside.scss';
+   
+   .content{
+      background: #EEEEEE;
+      width: calc(100vw - 240px);
+      padding: 40px;
+
+      .page-title{
+         font-size: 22px;
+         margin: 0;
+         line-height: 30px;
+         margin-bottom: 10px;
+      }
+      
+      .text{
+         margin-bottom: 20px;
+         line-height: 22px;
+      }
+
+      .card-container{
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+      }
+   }
+}
+
+.layout{
+   .main-container{
+      .row{
+         display: flex;
+         justify-content: space-between;
+         flex-wrap: wrap;
+         margin-bottom: 20px;
+
+         @import '../scss/component/card';
+      }
+   }
+}

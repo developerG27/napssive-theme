@@ -31,7 +31,6 @@
              position: relative;
              .search{
                 height: 30px;
-                @include border-radius();
                 border: 1px solid #ced4da;
                 background: #F8F9FA;
                 margin-left: 60px;
@@ -53,10 +52,9 @@
        }
  
        .ul {
-          @include no-bullet();
+           
           .item a {
-             @include link-colors($normal, $hover, $active, $visited, $focus);
-             @include unstyled-link(); //eliminato il text-decoration
+
           }
        }
     }
