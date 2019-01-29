@@ -1030,4 +1030,8 @@ div.code-toolbar > .toolbar span:focus {
 .waves-block {
   display: block; }
 
+.main-container {
+  display: flex;
+  background: #EAEAEA; }
+
 /*# sourceMappingURL=style.css.map */
