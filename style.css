@@ -434,31 +434,26 @@ table td, table th {
   height: calc(100vh - 70px);
   overflow: scroll;
   position: sticky !important;
-  top: 70px; }
-  .aside .list {
-    padding-top: 0px; }
-    .aside .list .item {
+  top: 70px;
+  font-family: 'Poppins'; }
+  .aside ul {
+    padding-top: 0px;
+    margin: 0px; }
+    .aside ul li {
       color: #fff;
       font-size: 13.3px;
-      padding: 13px 20px;
-      cursor: pointer;
-      line-height: 20px; }
-      .aside .list .item:hover {
+      padding: 20px;
+      cursor: pointer; }
+      .aside ul li:hover {
         background-color: #263442; }
-      .aside .list .item .link {
-        display: flex; }
-        .aside .list .item .link i {
-          margin-right: 10px; }
-  .aside .secondary .item {
-    margin-left: 30px;
-    line-height: 10px !important; }
+      .aside ul li a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 1.4em;
+        line-height: 30px; }
 
 .aside::-webkit-scrollbar {
   width: 0 !important; }
-
-.active {
-  height: 100% !important;
-  opacity: 1 !important; }
 
 .box-badge {
   display: flex;
@@ -534,50 +529,6 @@ table td, table th {
     background: linear-gradient(to right, #015496, #28B0EE, #51BFF0); }
   .badge.docker {
     background: linear-gradient(to right, #394D54, #008BB8, #039BC6, #BFDBE0); }
-
-.card {
-  border-radius: 5px; }
-
-.row {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start; }
-
-.container {
-  width: 95%;
-  margin: 10px auto; }
-
-.card-lg {
-  width: 46.8%;
-  height: auto;
-  border: none;
-  padding: 20px;
-  -webkit-box-shadow: 0 -3px 31px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.02);
-  box-shadow: 0 -3px 31px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.02);
-  background: #fff; }
-  .card-lg .coding.waves-effect {
-    width: 100%; }
-  .card-lg .img-template {
-    width: 100%;
-    object-fit: cover;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid #f3f3f3; }
-
-pre {
-  display: flex;
-  flex-direction: row;
-  min-width: 100%;
-  cursor: pointer;
-  width: 100%;
-  font-family: 'Arial'; }
-  pre code {
-    width: 100%;
-    padding-left: 5px !important;
-    font-size: 15px !important; }
-  pre span {
-    line-height: 20px !important; }
 
 .header {
   background: #ffffff;

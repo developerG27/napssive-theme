@@ -6,45 +6,32 @@
     overflow: scroll;
     position: sticky !important;
     top:70px;
+    font-family: 'Poppins';
 
-    .list{
+    ul{
         padding-top: 0px;
+        margin: 0px;
 
-        .item{
+        li{
             color: #fff;
             font-size: 13.3px;
-            padding: 13px 20px;
+            padding: 20px;
             cursor: pointer;
-            line-height:20px;
 
             &:hover{
                background-color: #263442;
             }
 
-            .link{
-                display: flex;
-
-                i{
-                    margin-right: 10px;
-                }
+            a{
+                color: #ffffff;
+                text-decoration: none;
+                font-size: 1.4em;
+                line-height :30px;
             }
         }
-    }
-
-    .secondary{
-
-        .item{
-            margin-left: 30px;
-            line-height: 10px !important;
-        }
-    }  
+    } 
 }
 
 .aside::-webkit-scrollbar { 
     width: 0 !important;
-}
-
-.active{
-    height: 100% !important;
-    opacity: 1 !important;
 }

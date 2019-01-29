@@ -6,6 +6,8 @@ get_header();
 	<div class="single">
 		<main class="main">
 			<div class="container single">
+
+			<?php get_sidebar() ?>
 				<div class="article">
 					<?php the_post_thumbnail(); ?>
 					<?php the_category() ?>

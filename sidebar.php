@@ -4,9 +4,7 @@
 		<ul>
 			<li> 
 				<a href="<?php the_permalink(); ?>">
-					<article <?php post_class('lista-titolo'); ?>>
-						<p class="title"><?php the_title(); ?></p>
-					</article>
+				    <?php the_title(); ?>
 				</a>
 			</li>
 		</ul>

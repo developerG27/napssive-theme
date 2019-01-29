@@ -7,7 +7,7 @@
 	<?php wp_head() ?>
 	<!-- Font Awesome -->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 
 	<?php wp_enqueue_script('NomeScript', '/script.js', false, '2.0', false );?>
 	
