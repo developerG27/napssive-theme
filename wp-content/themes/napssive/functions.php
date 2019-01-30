@@ -66,3 +66,44 @@ function my_custom_languages( $languages ) {
   return $languages;
 }
 add_filter( 'advanced_gutenberg_blocks_code_languages', 'my_custom_languages' );
+
+//costringe ad usare il certificato ssl
+define('FORCE_SSL_ADMIN', true); 
+
+
+
+// SOLO IN SVILUPPO, ELIMINARE IN PRODUZIONE-------------------------------------------------------------------
+//Evita la cache
+// Eliminar la versión de WP de la url
+function remove_src_version ( $url ) {
+  //Regex quitar el parametro ver
+  $url = preg_replace('/([?&])' . 'ver' . '=[^&]+(&|$)/','$1',$url);
+  //Eliminar caracteres erroneos al final
+  if (preg_match("/\?$/", $url) || preg_match("/\&$/", $url))
+    return substr($url, 0, -1);
+  else
+    return $url;
+}
+  // Añadir un parametro Random a la url
+  function add_src_param ( $url ) {
+    $url = remove_src_version($url);
+    $parsed_url = parse_url($url);
+    if(isset($parsed_url['query']))
+      return $url . '&__rtime=' . time();
+    else
+      return $url . '?__rtime=' . time();
+  }
+  add_filter( 'script_loader_src', 'add_src_param' );
+  add_filter( 'style_loader_src', 'add_src_param' );
+
+
+// Per caricare immagine del gravatar
+// if ( !function_exists('fb_addgravatar') ) {
+//     function fb_addgravatar( $avatar_defaults ) {
+//     $myavatar = get_bloginfo('template_directory').'/images/gravatar.jpg';
+//     //avatar por defecto
+//     $avatar_defaults[$myavatar] = 'Nuevo gravatar';
+//     return $avatar_defaults;
+//     }
+//  add_filter( 'avatar_defaults', 'fb_addgravatar' );
+// }
