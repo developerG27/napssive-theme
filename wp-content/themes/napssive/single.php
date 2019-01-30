@@ -11,12 +11,24 @@ get_header();
 		<div class="row">
 			<div class="card card-md">
 				<?php the_post_thumbnail(); ?>
-				<?php the_category(); ?>
-				<?php the_post(); ?>
-				<?php the_title(); ?>
-				<?php the_content(); ?>
 				<?php the_date(); ?>
-				<?php the_tags(); ?>
+				<?php the_category(); ?>
+
+				<?php
+					$post_tags = get_the_tags();
+					if ($post_tags) {
+  					foreach($post_tags as $tag) {
+    					echo '<a href="'; echo bloginfo();
+    					echo '/?tag=' . $tag->slug . '" class="badge ' . $tag->slug . '">' . $tag->name . '</a>';
+  					}
+				}
+				?>
+
+				<?php the_post(); ?>
+				<h3> <?php the_title(); ?> </h3>
+				<p> <?php the_content(); ?> </p>
+				
+				
 				<?php echo get_avatar(get_the_author_meta('ID'));?>
 				<?php the_author_posts_link(); ?>
 			</div>
