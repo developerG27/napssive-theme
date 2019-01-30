@@ -23,11 +23,11 @@
     ?>
 	</title>
 </head>
-<body>
+<body class="theme">
 	<header class="header">
 		<div class="container">	
 			<div class="brand_search">
-				<a href="#"> <p> Compass </p> </a>
+				<a href="#" class="brand"> <p> Compass </p> </a>
 
 				<?php get_search_form(); ?>
 			</div>

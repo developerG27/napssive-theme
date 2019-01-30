@@ -1,50 +1,57 @@
-.header {
-    background: #ffffff;
-    height: 70px;
-    position:sticky;
-    top:0px;
-    z-index: 10;
-    display: flex;
-    align-items: center;
- 
-    .container {
-       width: 99%;
-       margin: auto;
-       display: flex;
-       flex-direction: row;
-       justify-content: space-between;
-       align-items: center;
-       
-       .brand_search{
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          align-items: center;
-          width: 40%;
- 
-          .brand{
-             width: 200px;
-             height:42px;
-          }
- 
-          .search_icon{
-             position: relative;
-             .search{
-                height: 30px;
-                border: 1px solid #ced4da;
-                background: #F8F9FA;
-                margin-left: 60px;
-                padding-left:20px;
-                padding-right: 30px;
-             }
-             .fa-search{
-                color: #748598;
-                font-size: 20px;
-                position: absolute;
-                right: 5px;
-                top: 7px;
-             }
-          }
-       }
-    }
- }
+.theme{
+   .header {
+      background: #ffffff;
+      height: 70px;
+      position:sticky;
+      top:0px;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+   
+      .container {
+         width: 98%;
+         margin: auto;
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         align-items: center;
+         padding: 0px;
+         
+         .brand_search{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 28%;
+   
+            .brand{
+               width: 200px;
+               height:42px;
+               display: flex;
+               align-items: center;
+               font-size: 25px;
+            }
+   
+            .search_icon{
+               position: relative;
+
+               .search{
+                  height: 30px;
+                  border: 1px solid #ced4da;
+                  background: #F8F9FA;
+                  margin-left: 60px;
+                  padding-left:20px;
+                  padding-right: 30px;
+               }
+               .fa-search{
+                  color: #748598;
+                  font-size: 20px;
+                  position: absolute;
+                  right: 5px;
+                  top: 7px;
+               }
+            }
+         }
+      }
+   }
+}

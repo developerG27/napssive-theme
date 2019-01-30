@@ -1,26 +1,32 @@
-.alert{
-    margin: 5px 0px 5px 0px;
-    border-radius: 2px;
-
-    p{
-        margin-top: 0px;
-        padding: 7px;
-        margin-left: 10px;
+.theme{
+    .alert{
+        margin: 5px 0px 5px 0px;
+        border-radius: 2px;
+    
+        p{
+            margin-top: 0px;
+            padding: 7px;
+            margin-left: 10px;
+        }
     }
-}
-.alert.success{
-    color: #58db83;
-    background: #D6F6E0;
-}
-.alert.warning{
-    color:#F5B25C;
-    background: #FCE9C1;
-}
-.alert.danger{
-    color: #EC537F;
-    background: #FBDDE2;
-}
-.alert.attention{ 
-    color: #7a6fbe;
-    background: #ECEAF6;
+
+    .alert.success{
+        color: #58db83;
+        background: #D6F6E0;
+    }
+    
+    .alert.warning{
+        color:#F5B25C;
+        background: #FCE9C1;
+    }
+    
+    .alert.danger{
+        color: #EC537F;
+        background: #FBDDE2;
+    }
+    
+    .alert.attention{ 
+        color: #7a6fbe;
+        background: #ECEAF6;
+    }
 }

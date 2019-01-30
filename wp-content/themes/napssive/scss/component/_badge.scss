@@ -1,108 +1,110 @@
-.box-badge{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap !important;
-    width:100%;
- }
- 
- .badge{
-    border-radius: 3px;
-    padding: 5px 7px !important;
-    color: #fff;
-    margin-right:10px;
-    margin-bottom:10px;
-     
-    &.html{
-        background:linear-gradient(to right, #E44D26 , #F16529);
+.theme{
+   .box-badge{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap !important;
+      width:100%;
+   }
+   
+   .badge{
+      border-radius: 3px;
+      padding: 5px 7px !important;
+      color: #fff;
+      margin-right:10px;
+      margin-bottom:10px;
+       
+      &.html{
+          background:linear-gradient(to right, #E44D26 , #F16529);
+      }
+      &.handlebars{
+         background:linear-gradient(to right, #2B1D11,#524538,#ED8423);
+      }
+      &.css{
+         background:linear-gradient(to right, #1171BD , #0D87C8);
+      }
+      &.bootstrap{
+         background: #6E44A3
+      }
+      &.semantic-ui{
+         background: #35BDB2;
+      }
+      &.sass{
+         background:#CF649A;
+      }
+      &.stylus{
+         background: linear-gradient(to right, #292929,#B3D107);
+      }
+      &.postcss{
+         background: #DD3A0A;
+      }
+      &.compass{
+         background: linear-gradient(to right,#BC0C04, #EA1808)
+      }
+      &.javascript{
+         background: linear-gradient(to right, #D5B932, #FED942)
+      }
+      &.typescript{
+         background:#2771BF;
+      }
+      &.jquery{
+         background: #0868AB;
+      }
+      &.angular{
+         background: linear-gradient(to right, #B32E31,#E03237);
+      }
+      &.react{
+         background: #57BDDB;
+      }
+      &.vuejs{
+         background: linear-gradient(to right, #32475B,#3FB27F, #00BB7C);
+      }
+      &.nodejs{
+         background: linear-qgradient(to right, #3E863D,#508F4A,#79B85F);
+      }
+      &.nodejs{
+         background: linear-gradient(to right, #3E863D,#508F4A,#79B85F);
+      }
+      &.express{
+          background: linear-gradient(to right, #222222, #F7DF1E);
+      }
+      &.php{
+         background: #7377AD;
+      }
+      &.wordpress{
+         background: #21759B;
+      }
+      &.laravel{
+         background: linear-gradient(to right, #F46B5A, #F34D39);
+      }
+      &.python{
+         background: linear-gradient(to left, #F7CF44 , #356C9B );
+      }
+      &.django{
+         background: #092D1F;
+      }
+      &.mysql{
+         background: linear-gradient(to right, #00618B, #E69A1B);
+      }
+      &.postgresql{
+         background: #31648C;
+      }
+      &.redis{
+         background: linear-gradient(to right, #7A0D01, #A41A11, #D82A20);
+      }
+      &.java{
+         background: linear-gradient(to right, #006CBA, #EA2D2E);
+      }
+      &.cpp{
+         background: linear-gradient(to right, #004482,#00599C,#659AD2);
+      }
+      &.perl{
+         background: #0196C1;
+      }
+      &.flutter{
+         background: linear-gradient(to right, #015496,#28B0EE,#51BFF0)
+      }
+      &.docker{
+         background: linear-gradient(to right, #394D54,#008BB8,#039BC6,#BFDBE0);
+      }
     }
-    &.handlebars{
-       background:linear-gradient(to right, #2B1D11,#524538,#ED8423);
-    }
-    &.css{
-       background:linear-gradient(to right, #1171BD , #0D87C8);
-    }
-    &.bootstrap{
-       background: #6E44A3
-    }
-    &.semantic-ui{
-       background: #35BDB2;
-    }
-    &.sass{
-       background:#CF649A;
-    }
-    &.stylus{
-       background: linear-gradient(to right, #292929,#B3D107);
-    }
-    &.postcss{
-       background: #DD3A0A;
-    }
-    &.compass{
-       background: linear-gradient(to right,#BC0C04, #EA1808)
-    }
-    &.javascript{
-       background: linear-gradient(to right, #D5B932, #FED942)
-    }
-    &.typescript{
-       background:#2771BF;
-    }
-    &.jquery{
-       background: #0868AB;
-    }
-    &.angular{
-       background: linear-gradient(to right, #B32E31,#E03237);
-    }
-    &.react{
-       background: #57BDDB;
-    }
-    &.vuejs{
-       background: linear-gradient(to right, #32475B,#3FB27F, #00BB7C);
-    }
-    &.nodejs{
-       background: linear-qgradient(to right, #3E863D,#508F4A,#79B85F);
-    }
-    &.nodejs{
-       background: linear-gradient(to right, #3E863D,#508F4A,#79B85F);
-    }
-    &.express{
-        background: linear-gradient(to right, #222222, #F7DF1E);
-    }
-    &.php{
-       background: #7377AD;
-    }
-    &.wordpress{
-       background: #21759B;
-    }
-    &.laravel{
-       background: linear-gradient(to right, #F46B5A, #F34D39);
-    }
-    &.python{
-       background: linear-gradient(to left, #F7CF44 , #356C9B );
-    }
-    &.django{
-       background: #092D1F;
-    }
-    &.mysql{
-       background: linear-gradient(to right, #00618B, #E69A1B);
-    }
-    &.postgresql{
-       background: #31648C;
-    }
-    &.redis{
-       background: linear-gradient(to right, #7A0D01, #A41A11, #D82A20);
-    }
-    &.java{
-       background: linear-gradient(to right, #006CBA, #EA2D2E);
-    }
-    &.cpp{
-       background: linear-gradient(to right, #004482,#00599C,#659AD2);
-    }
-    &.perl{
-       background: #0196C1;
-    }
-    &.flutter{
-       background: linear-gradient(to right, #015496,#28B0EE,#51BFF0)
-    }
-    &.docker{
-       background: linear-gradient(to right, #394D54,#008BB8,#039BC6,#BFDBE0);
-    }
-  }
+}
