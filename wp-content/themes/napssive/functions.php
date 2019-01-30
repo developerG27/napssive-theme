@@ -58,3 +58,11 @@ add_action('get_header', 'my_filter_head');
 function my_filter_head() {
    remove_action('wp_head', '_admin_bar_bump_cb');
 } 
+
+//Code gute
+function my_custom_languages( $languages ) {
+  $languages[] = array('slug' => 'rust', 'mode' => 'rust', 'label' => 'Rust') ;
+
+  return $languages;
+}
+add_filter( 'advanced_gutenberg_blocks_code_languages', 'my_custom_languages' );

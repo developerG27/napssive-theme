@@ -11,17 +11,17 @@ get_header();
 		<div class="row">
 			<div class="card card-md">
 				<?php the_post_thumbnail(); ?>
-				<?php the_date(); ?>
+				<p> <?php the_date(); ?> </p>
 				<?php the_category(); ?>
 
 				<?php
 					$post_tags = get_the_tags();
 					if ($post_tags) {
-  					foreach($post_tags as $tag) {
-    					echo '<a href="'; echo bloginfo();
-    					echo '/?tag=' . $tag->slug . '" class="badge ' . $tag->slug . '">' . $tag->name . '</a>';
-  					}
-				}
+						foreach($post_tags as $tag) {
+							echo '<a href="'; echo bloginfo();
+							echo '/?tag=' . $tag->slug . '" class="badge ' . $tag->slug . '">' . $tag->name . '</a>';
+						}
+					}
 				?>
 
 				<?php the_post(); ?>
@@ -32,9 +32,7 @@ get_header();
 				<?php echo get_avatar(get_the_author_meta('ID'));?>
 				<?php the_author_posts_link(); ?>
 			</div>
-			<div class="card card-md">
 
-			</div>
 		</div>
 	</div>
 </section>
