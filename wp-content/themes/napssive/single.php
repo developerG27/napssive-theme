@@ -3,27 +3,31 @@ $ricerca = $_GET['s'];
 get_header(); 
 
 ?>	
-	<div class="single">
-		<main class="main">
-			<div class="container single">
-				<?php get_sidebar(); ?>
-				<div class="article">
-					<?php the_post_thumbnail(); ?>
-					<?php the_category() ?>
-					<p><?php the_post() ?> </p>
-					<p class="title"><?php the_title() ?></p>
-					<p><?php the_content() ?> </p>
-					<p><?php the_date() ?> </p>
-					<p><?php the_tags() ?> </p>
-					<?php echo get_avatar( get_the_author_meta( 'ID' )); the_author_posts_link() ?> 
-				</div>
+
+<section class="main-container">
+	<?php get_sidebar();?>
+
+	<div class="content">
+		<div class="row">
+			<div class="card card-md">
+				<?php the_post_thumbnail(); ?>
+				<?php the_category(); ?>
+				<?php the_post(); ?>
+				<?php the_title(); ?>
+				<?php the_content(); ?>
+				<?php the_date(); ?>
+				<?php the_tags(); ?>
+				<?php echo get_avatar(get_the_author_meta('ID'));?>
+				<?php the_author_posts_link(); ?>
 			</div>
-		</main>
+			<div class="card card-md">
+
+			</div>
+		</div>
 	</div>
+</section>
+
 </body>
-
-<?php get_footer()?>
-
 </html>
 
 
