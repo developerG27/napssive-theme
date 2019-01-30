@@ -15,7 +15,7 @@ body.theme {
       color: #111; }
 
 .wp-block-advanced-gutenberg-blocks-code {
-  margin: 1em 0em !important; }
+  margin: 0.3em 0em !important; }
 
 .theme ul, .theme ol {
   margin-top: 1.5rem;
@@ -34,22 +34,28 @@ body.theme {
   line-height: 1.5rem; }
 .theme h1 {
   font-size: 4.6em;
-  line-height: 1.2em; }
+  line-height: 1.2em;
+  margin-top: 0px; }
 .theme h2 {
   font-size: 3.7em;
-  line-height: 1.2em; }
+  line-height: 1.2em;
+  margin-top: 0px; }
 .theme h3 {
   font-size: 3em;
-  line-height: 1.5em !important; }
+  line-height: 1.5em !important;
+  margin-top: 0px; }
 .theme h4 {
   font-size: 2.4em;
-  line-height: 1.2em; }
+  line-height: 1.2em;
+  margin-top: 0px; }
 .theme h5 {
   font-size: 2em;
-  line-height: 1.4em; }
+  line-height: 1.4em;
+  margin-top: 0px; }
 .theme h6 {
   font-size: 1.6em;
-  line-height: 1.8em; }
+  line-height: 1.8em;
+  margin-top: 0px; }
 .theme p {
   font-size: 1.1em;
   line-height: 1.2em; }
