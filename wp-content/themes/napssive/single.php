@@ -27,7 +27,7 @@ get_header();
 				?>
 				<p> <?php the_content(); ?> </p>
 				<?php echo get_avatar(get_the_author_meta('ID'));?>
-				<?php the_author_posts_link(); ?>
+        <?php the_author_posts_link(); ?>
 			</div>
 		</div>
 	</div>
