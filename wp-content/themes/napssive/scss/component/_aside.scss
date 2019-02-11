@@ -1,37 +1,40 @@
-.theme{
-    .aside{
-        background:#2b3a4a;
-        width:240px;
-        max-width: 240px;
-        height: calc(100vh - 70px);
-        overflow: scroll;
-        position: sticky !important;
-        top:70px;
-        font-family: 'Poppins';
-    
-        ul{
-    
-            li{
-                color: #fff;
-                font-size: 13.3px;
-                cursor: pointer;
-                &:hover{
-                   background-color: #263442;
-                }
-    
-                a{
-                    color: #ffffff;
-                    text-decoration: none;
-                    font-size: 1.4em;
-                    line-height :30px;
-                    padding: 20px;
-                    display: block;
-                }
-            }
-        } 
+.theme {
+  .aside {
+    background: #2b3a4a;
+    width: 240px;
+    max-width: 240px;
+    height: calc(100vh - 70px);
+    overflow: scroll;
+    position: sticky !important;
+    top: 70px;
+    font-family: 'Poppins';
+    z-index:30;
+
+    ul {
+
+      li {
+        color: #fff;
+        font-size: 13.3px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #263442;
+        }
+
+        a {
+          color: #ffffff;
+          text-decoration: none;
+          font-size: 1.4em;
+          line-height: 30px;
+          padding: 20px;
+          display: block;
+        }
+      }
     }
-    
-    .aside::-webkit-scrollbar { 
-        width: 0 !important;
-    }
+  }
+
+  .aside::-webkit-scrollbar {
+    width: 0 !important;
+  }
 }
+

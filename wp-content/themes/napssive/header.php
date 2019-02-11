@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<?php wp_head() ?>
-	<!-- Font Awesome -->
+	<!-- Material Icon -->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 
@@ -27,7 +27,7 @@
 	<header class="header">
 		<div class="container">	
 			<div class="brand_search">
-				<a href="#" class="brand"> <p> Compass </p> </a>
+				<a href="<?php bloginfo('url'); ?>" class="brand"> <p> Compass </p> </a>
 
 				<?php get_search_form(); ?>
 			</div>

@@ -2,8 +2,6 @@
 	$ricerca = $_GET['s'];
 	get_header(); 
 ?>
-
-
 <section class="main-container">
 	<?php get_sidebar();?>
 
@@ -11,7 +9,7 @@
 		<div class="row">
 			<div class="card card-md">
 
-			</div>  
+			</div>
 		</div>
 	</div>
 </section>

@@ -1,31 +1,32 @@
 <?php 
-$ricerca = $_GET['s'];
-?> 
+	$ricerca = $_GET['s'];
+	get_header(); 
+?>
 
-<?php get_header() ?>
 
-<main class="main search">
-	<div class="container">
-		<p class="alert-primary">Hai cercato: <?php echo $ricerca; ?> </p>
-			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-				<a href="<?php the_permalink(); ?>">
-					<article <?php post_class('article'); ?>>
-						<?php if( has_post_thumbnail()) { the_post_thumbnail();} ?>
-                  <p class="title"><?php the_title(); ?></p>
+<section class="main-container">
+	<?php get_sidebar();?>
 
-                  <footer class="footer">
-                  	<?php echo get_avatar( get_the_author_meta( 'ID' )); the_author_posts_link() ?> 
-                  </footer>
-					</article>
-				</a>
+	<div class="content">
+		<div class="row">
+			<div class="card card-md">
+        <p>Hai cercato <?php echo $ricerca ?></p>
 
-			<?php endwhile; else: ?>
-			
-			<div class="article">
-				<p>Non ho trovato nulla</p>
+        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+        <a href="<?php the_permalink(); ?>">
+          <p><?php the_title(); ?></p>
+        </a>
+
+        <?php endwhile; else: ?>
+
+          0 risultati
+
+        <?php endif; ?>
 			</div>
-			
-      	<?php endif; ?>
-   </div>
-</main>
-<?php get_footer() ?>
+		</div>
+	</div>
+</section>
+
+</body>
+</html>

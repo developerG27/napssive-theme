@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Themes - Twenty Sixteen package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-12-12 12:47:33+0000\n"
+"PO-Revision-Date: 2019-02-01 10:43:43+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -122,7 +122,7 @@ msgstr "Sembra che non siamo riusciti a trovare ciò che cercavi. Forse una rice
 
 #: template-parts/content-none.php:23
 msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
-msgstr "Non vi è nulla che corrisponda ai tuoi criteri di ricerca. Prova di nuovo utilizzando altre parole chiave."
+msgstr "Non c’è nessuna corrispondenza con i termini di ricerca che hai indicato. Riprova con termini diversi."
 
 #: template-parts/content-none.php:19
 msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
@@ -292,6 +292,22 @@ msgstr "Appare sotto al contenuto degli articoli e delle pagine."
 #: functions.php:268
 msgid "Content Bottom 2"
 msgstr "Sotto al contenuto 2"
+
+#. translators: If there are characters in your language that are not supported
+#. by Merriweather, translate this to 'off'. Do not translate into your own
+#. language.
+#: functions.php:296
+msgctxt "Merriweather font: on or off"
+msgid "on"
+msgstr "on"
+
+#. translators: If there are characters in your language that are not supported
+#. by Montserrat, translate this to 'off'. Do not translate into your own
+#. language.
+#: functions.php:301
+msgctxt "Montserrat font: on or off"
+msgid "on"
+msgstr "on"
 
 #: functions.php:244
 msgid "Sidebar"
