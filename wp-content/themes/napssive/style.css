@@ -641,6 +641,9 @@ div.code-toolbar > .toolbar span:focus {
     padding: 1.5%; }
     @media screen and (max-width: 960px) {
       .theme .main-container .content {
+        padding: 0% !important; } }
+    @media screen and (max-width: 960px) {
+      .theme .main-container .content {
         width: 78% !important;
         max-width: 78% !important; } }
     .theme .main-container .content .row {
@@ -661,5 +664,8 @@ div.code-toolbar > .toolbar span:focus {
           .theme .main-container .content .row .card-md {
             width: 100%;
             min-width: 0px; } }
+      @media screen and (max-width: 960px) {
+        .theme .main-container .content .row {
+          padding: 10px !important; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -11,7 +11,7 @@ get_header();
 		<div class="row">
 			<div class="card card-md">
 				<?php //the_post_thumbnail(); ?>
-				<p> <?php //the_date(); ?> </p>
+				<!-- <p> <?php //the_date(); ?> </p> -->
 				<?php  // the_category(); ?>
 
 				<?php the_post(); ?>				
