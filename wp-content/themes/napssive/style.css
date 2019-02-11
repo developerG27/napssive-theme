@@ -108,6 +108,10 @@ body.theme {
   top: 70px;
   font-family: 'Poppins';
   z-index: 30; }
+  @media screen and (max-width: 960px) {
+    .theme .aside {
+      width: 22%;
+      max-width: 22% !important; } }
   .theme .aside ul li {
     color: #fff;
     font-size: 13.3px;
@@ -121,6 +125,10 @@ body.theme {
       line-height: 30px;
       padding: 20px;
       display: block; }
+      @media screen and (max-width: 960px) {
+        .theme .aside ul li a {
+          font-size: 1.2em;
+          padding: 10px !important; } }
 .theme .aside::-webkit-scrollbar {
   width: 0 !important; }
 
@@ -205,9 +213,14 @@ body.theme {
 
 .card-md {
   width: 60%;
+  min-width: 700px;
   background: #fff;
   height: auto;
   box-shadow: 0 -3px 31px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.02); }
+  @media screen and (max-width: 960px) {
+    .card-md {
+      width: 100%;
+      min-width: 0px; } }
 
 .theme .header {
   background: #ffffff;
@@ -626,6 +639,10 @@ div.code-toolbar > .toolbar span:focus {
     background: #EDEDED;
     box-sizing: border-box;
     padding: 1.5%; }
+    @media screen and (max-width: 960px) {
+      .theme .main-container .content {
+        width: 78% !important;
+        max-width: 78% !important; } }
     .theme .main-container .content .row {
       display: flex;
       justify-content: center;
@@ -636,8 +653,13 @@ div.code-toolbar > .toolbar span:focus {
         box-sizing: border-box; }
       .theme .main-container .content .row .card-md {
         width: 60%;
+        min-width: 700px;
         background: #fff;
         height: auto;
         box-shadow: 0 -3px 31px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.02); }
+        @media screen and (max-width: 960px) {
+          .theme .main-container .content .row .card-md {
+            width: 100%;
+            min-width: 0px; } }
 
 /*# sourceMappingURL=style.css.map */

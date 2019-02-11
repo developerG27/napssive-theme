@@ -10,6 +10,11 @@
          background: #EDEDED;
          box-sizing: border-box;
          padding: 1.5%;
+
+         @media screen and (max-width: 960px){
+           width: 78% !important;
+           max-width: 78% !important;
+         }
          .row{
             display: flex;
             justify-content: center;
