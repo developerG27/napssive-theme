@@ -12,9 +12,6 @@
 			<div class="card card-md">
 
 			</div>
-			<div class="card card-md">
-
-			</div>
 		</div>
 	</div>
 </section>
