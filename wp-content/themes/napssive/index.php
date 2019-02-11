@@ -6,15 +6,14 @@
 
 <section class="main-container">
 	<aside class="aside">
-  <?php 
-    $categories = get_categories();
-    
-    foreach($categories as $category) {
-      echo '<ul> <li> <a href="' . get_category_link($category->term_id) . '">' . $category->name . '</a> </li> </ul>'; 
-    } 
-  ?>  
-
-</aside>
+    <?php 
+      $categories = get_categories();
+      
+      foreach($categories as $category) {
+        echo '<ul> <li> <a href="' . get_category_link($category->term_id) . '">' . $category->name . '</a> </li> </ul>'; 
+      } 
+    ?>  
+  </aside>
 
 	<div class="content">
 		<div class="row">
