@@ -31,11 +31,10 @@
 				<?php get_search_form(); ?>
 			</div>
 
-			<div class="box-icon">
-				<i class="material-icons fa-star"> star </i>
-				<i class="material-icons fa-star"> star </i>
-				<i class="material-icons fa-star"> star </i>
-				<i class="material-icons fa-star"> star </i>
+			<div class="box-menu">
+				<span>Tips</span>
+        <span>News</span>
+        <span>Documentazioni</span>
 			</div>
 		</div>
 	</header>

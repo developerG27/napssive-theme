@@ -265,6 +265,10 @@ body.theme {
           position: absolute;
           right: 5px;
           top: 7px; }
+    .theme .header .container .box-menu span {
+      margin-right: 25px; }
+      .theme .header .container .box-menu span:last-child {
+        margin-right: 0px; }
 
 .theme .form-search {
   position: relative; }
