@@ -3,7 +3,6 @@
 	get_header(); 
 ?>
 
-
 <section class="main-container">
   <aside class="aside">
     <?php 

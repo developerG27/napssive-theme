@@ -28,7 +28,6 @@
 		<div class="container">	
 			<div class="brand_search">
 				<a href="<?php bloginfo('url'); ?>" class="brand"> <p> Compass </p> </a>
-
 				<?php get_search_form(); ?>
 			</div>
 

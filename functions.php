@@ -1,45 +1,24 @@
 <?php
-/* Stili Css */
 //Al posto di rand() aggiungerò la versione
-wp_enqueue_style( 'style', get_stylesheet_uri(), rand() ); 
-wp_enqueue_scripts( 'script'); 
-
-//Rimuove la version scritta di Wordpress
-function wpb_remove_version(){
-  return '';
-}
-add_filter('the_generator', 'wpb_remove_version');
-
-//Aggiunge jQuery
-wp_enqueue_script('jquery');
+wp_enqueue_style( 'style', get_stylesheet_uri(), rand() );
 
 //Carico lo script
 //il nome, src, array(), la versione, true= nel footer, false= nel header
-wp_enqueue_script('script',get_template_directory_uri().'/script.js',array(),rand(),false);
+wp_enqueue_script('script',get_template_directory_uri().'/script/script.js',array(),rand(),false);
 
-//Aggiungo le post thumbnails
+//Aggiunge le post thumbnails (Immagini)
 add_theme_support('post-thumbnails');   
 
-//menu
+//Menu
 register_nav_menus( array(
   'primary' => esc_html__('primary'),
 ));
 
 // Cambio del nome del footer nel backend
 function remove_footer_admin () {
-  echo 'Sviluppato da <a href="http://www.wordpress.org" target="_blank">DeveloperG27</a>';
-  }
-  add_filter('admin_footer_text', 'remove_footer_admin');
-
-//Manipolare RSS Footer
-function wpbeginner_postrss($content) {
-  if(is_feed()){
-  $content = 'This post was written by Syed Balkhi '.$content.'Check out WPBeginner';
-  }
-  return $content;
-  }
-  add_filter('the_excerpt_rss', 'wpbeginner_postrss');
-  add_filter('the_content', 'wpbeginner_postrss');
+	echo 'Sviluppato da <a href="http://www.wordpress.org" target="_blank">DeveloperG27</a>';
+}
+add_filter('admin_footer_text', 'remove_footer_admin');
 
 //Messaggio quando un utente inserisce username e password sbagliati
 function no_wordpress_errors(){
@@ -47,22 +26,15 @@ function no_wordpress_errors(){
 }
 add_filter( 'login_errors', 'no_wordpress_errors' );
 
-//Infinite scroll
-add_theme_support( 'infinite-scroll', array(
-  'container' => 'content',
-  'footer' => 'page',
-) );
-
-//wp_head()
+//rimuove la barra superiore wp_head()
 add_action('get_header', 'my_filter_head');
 function my_filter_head() {
-   remove_action('wp_head', '_admin_bar_bump_cb');
+	remove_action('wp_head', '_admin_bar_bump_cb');
 } 
 
-//Code gute
+//Abitalita i blocchi avanzati di gutemberg
 function my_custom_languages( $languages ) {
   $languages[] = array('slug' => 'rust', 'mode' => 'rust', 'label' => 'Rust') ;
-
   return $languages;
 }
 add_filter( 'advanced_gutenberg_blocks_code_languages', 'my_custom_languages' );
@@ -70,39 +42,12 @@ add_filter( 'advanced_gutenberg_blocks_code_languages', 'my_custom_languages' );
 //costringe ad usare il certificato ssl
 define('FORCE_SSL_ADMIN', true); 
 
-
 // SOLO IN SVILUPPO, ELIMINARE IN PRODUZIONE-------------------------------------------------------------------
-//Evita la cache
-// Eliminar la versión de WP de la url
+// Elimina la versione di wp dal url: maggior sicurezza
 function remove_src_version ( $url ) {
-  //Regex quitar el parametro ver
   $url = preg_replace('/([?&])' . 'ver' . '=[^&]+(&|$)/','$1',$url);
-  //Eliminar caracteres erroneos al final
   if (preg_match("/\?$/", $url) || preg_match("/\&$/", $url))
     return substr($url, 0, -1);
   else
     return $url;
 }
-  // Añadir un parametro Random a la url
-  function add_src_param ( $url ) {
-    $url = remove_src_version($url);
-    $parsed_url = parse_url($url);
-    if(isset($parsed_url['query']))
-      return $url . '&__rtime=' . time();
-    else
-      return $url . '?__rtime=' . time();
-  }
-  add_filter( 'script_loader_src', 'add_src_param' );
-  add_filter( 'style_loader_src', 'add_src_param' );
-
-
-// Per caricare immagine del gravatar
-// if ( !function_exists('fb_addgravatar') ) {
-//     function fb_addgravatar( $avatar_defaults ) {
-//     $myavatar = get_bloginfo('template_directory').'/images/gravatar.jpg';
-//     //avatar por defecto
-//     $avatar_defaults[$myavatar] = 'Nuevo gravatar';
-//     return $avatar_defaults;
-//     }
-//  add_filter( 'avatar_defaults', 'fb_addgravatar' );
-// }
