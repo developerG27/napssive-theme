@@ -1,93 +1,96 @@
-.theme{
-   ul, ol {
-      margin-top: 1.5rem;
-      margin-bottom: 1.5rem;
-   }
-   
-   ul li, ol li {
-     line-height: 1em !important;
-   }
-   
-   ul ul, ol ul, ul ol, ol ol {
-      margin-top: 0;
-      margin-bottom: 0;
-   }
-   
-   blockquote {
-      line-height: 1.5em;
-      margin-top: 1em;
-   }
-     
-   h1, h2, h3, h4, h5, h6 {
-      font-family: sans-serif;
-      margin-bottom: 0;
-      line-height: 1.5rem;
-   } 
-   
-   h1 {
-      font-size: 4.6em;
-      line-height: 1.2em;
-      margin-top: 0px;
-   }
-   
-   h2 {
-      font-size: 3.7em;
-      line-height: 1.2em;
-      margin-top: 0px;
-   }
-   
-   h3 {
-      font-size: 3em;
-      line-height: 1.5em !important;
-      margin-top: 0px;
-   }
-   
-   h4 {
-      font-size: 2.4em;
-      line-height: 1.2em;
-      margin-top: 0px;
-   }
-   
-   h5 {
-      font-size: 2em;
-      line-height: 1.4em;
-      margin-top: 0px;
-   }
-   
-   h6 {
-      font-size: 1.6em;
-      line-height: 1.8em;
-      margin-top: 0px;
-   }
-   
-   p {
-      font-size: 1.1em ;
-      line-height: 1.2em;
-   }
-   
-   table {
-      margin-top: 1.5rem;
-      border-spacing: 0px;
-      border-collapse: collapse;
-   }
-   
-   table td, table th {
-      padding: 0;
-      line-height: 33px;
-   }
-   
-   
-   //margini
-   .m-y-2{
-      margin: 10px 0px 10px 0px;
-   }
-   .m-t-2{
-      margin-top: 10px;
-   }
-   .m-t-4{
-      margin-top: 20px;
-   }
-   .m-t-5{
-      margin-top: 25px;
-   }
+.theme {
+  ul, ol {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  ul li, ol li {
+    line-height: 1em !important;
+  }
+
+  ul ul, ol ul, ul ol, ol ol {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  blockquote {
+    line-height: 1.5em;
+    margin-top: 1em;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: sans-serif;
+    margin-bottom: 0;
+    line-height: 1.5rem;
+  }
+
+  h1 {
+    font-size: 4.6em;
+    line-height: 1.2em;
+    margin-top: 0px;
+  }
+
+  h2 {
+    font-size: 3.7em;
+    line-height: 1.2em;
+    margin-top: 0px;
+  }
+
+  h3 {
+    font-size: 3em;
+    line-height: 1.5em !important;
+    margin-top: 0px;
+  }
+
+  h4 {
+    font-size: 2.4em;
+    line-height: 1.2em;
+    margin-top: 0px;
+  }
+
+  h5 {
+    font-size: 2em;
+    line-height: 1.4em;
+    margin-top: 0px;
+  }
+
+  h6 {
+    font-size: 1.6em;
+    line-height: 1.8em;
+    margin-top: 0px;
+  }
+
+  p {
+    font-size: 1.1em;
+    line-height: 1.2em;
+  }
+
+  table {
+    margin-top: 1.5rem;
+    border-spacing: 0px;
+    border-collapse: collapse;
+  }
+
+  table td, table th {
+    padding: 0;
+    line-height: 33px;
+  }
+
+
+  //margini
+  .m-y-2 {
+    margin: 10px 0px 10px 0px;
+  }
+
+  .m-t-2 {
+    margin-top: 10px;
+  }
+
+  .m-t-4 {
+    margin-top: 20px;
+  }
+
+  .m-t-5 {
+    margin-top: 25px;
+  }
 }
