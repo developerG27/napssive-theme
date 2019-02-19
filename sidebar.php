@@ -7,7 +7,7 @@
     $myposts = get_posts(array('numberposts' => 15, 'offset' => 0, 'category__in' => array($category), 'post_status' => 'publish', 'order' => 'ASC'));
     foreach ($myposts as $post) :
       setup_postdata($post);
-      ?>
+    ?>
 
       <li>
         <a href="<?php the_permalink(); ?>"> <?php the_title(); ?>
