@@ -33,10 +33,10 @@
 
     <div class="box-menu">
       <?php
-      wp_nav_menu( array(
-      'theme_location' => 'primary',
-      'menu_id' => 'primary',
-      ) );
+        wp_nav_menu( array(
+        'theme_location' => 'primary',
+        'menu_id' => 'primary',
+        ) );
       ?>
     </div>
   </div>
