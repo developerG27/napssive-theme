@@ -21,9 +21,7 @@ get_header();
 
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-          <a href="<?php the_permalink(); ?>">
-            <p><?php the_title(); ?></p>
-          </a>
+            <p><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
 
         <?php endwhile; else: ?>
 
