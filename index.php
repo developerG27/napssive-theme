@@ -6,9 +6,10 @@ get_header();
 <section class="main-container">
   <aside class="aside">
     <?php
-    $categories = get_categories();
-
+    //Rimuove categoria 14 dal loop: news
+    $categories = get_categories('hide_empty=0&exclude=14');
     foreach ($categories as $category) {
+
       echo '<ul> <li> <a href="' . get_category_link($category->term_id) . '">' . $category->name . '</a> </li> </ul>';
     }
     ?>
@@ -17,8 +18,8 @@ get_header();
   <div class="content">
     <div class="row">
       <div class="card card-md">
-        <?php get_search_form(); ?>
-
+        <!--Rimuove categoria 14 dal loop : news -->
+        <?php query_posts('cat=-14'); ?>
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
           <a href="<?php the_permalink(); ?>">

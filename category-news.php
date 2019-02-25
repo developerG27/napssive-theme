@@ -9,7 +9,7 @@ get_header();
 
   <div class="content">
     <div class="row">
-      <div class="card card-md">
+      <div class="card card-md news">
         <?php get_search_form(); ?>
 
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
