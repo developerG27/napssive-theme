@@ -4,5 +4,7 @@ $(document).ready(function(){
 
     $('#app-menu').on('click',function(){
         console.log('hai fatto click')
+
+        $('#secondary-menu').toggleClass('none');
     })
 })

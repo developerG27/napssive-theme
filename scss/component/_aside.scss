@@ -10,6 +10,10 @@
     font-family: 'Poppins';
     z-index: 30;
 
+    @media screen and (max-width: 768px){
+      display: none;
+    }
+
     @media screen and (max-width: 960px) {
       width: 22%;
       max-width: 22% !important;
