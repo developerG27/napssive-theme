@@ -19,6 +19,7 @@ get_header();
           <a href="<?php the_permalink(); ?>">
             <article class="article">
               <?php the_post_thumbnail(); ?>
+
               <p class="title"> <?php the_title(); ?></p>
             </article>
           </a>
