@@ -236,7 +236,7 @@ body.theme {
       flex-wrap: wrap;
       justify-content: space-between; }
       .card-md.news .box-article .article {
-        width: 320px;
+        width: 390px;
         border: 1px solid #f1f1f1;
         height: 300px;
         position: relative;
@@ -395,7 +395,7 @@ body.theme {
             flex-wrap: wrap;
             justify-content: space-between; }
             .theme .main-container .content .row .card-md.news .box-article .article {
-              width: 320px;
+              width: 390px;
               border: 1px solid #f1f1f1;
               height: 300px;
               position: relative;
