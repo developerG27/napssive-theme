@@ -6,9 +6,10 @@ get_header();
 <section class="main-container">
   <aside class="aside">
     <?php
-    $categories = get_categories();
-
+    //Rimuove categoria 14 dal loop: news
+    $categories = get_categories('hide_empty=0&exclude=14');
     foreach ($categories as $category) {
+
       echo '<ul> <li> <a href="' . get_category_link($category->term_id) . '">' . $category->name . '</a> </li> </ul>';
     }
     ?>
