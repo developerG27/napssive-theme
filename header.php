@@ -9,8 +9,6 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 
-  <?php wp_enqueue_script('NomeScript', '/script.js', false, '2.0', false); ?>
-
   <title>
     <?php
     if (is_home()) {
@@ -44,13 +42,12 @@
     </div>
     
     <div id="secondary-menu" class="secondary-menu none">
-      <ul>
-        <li>Primo</li>
-        <li>Secondo</li>
-        <li>Terzo</li>
-        <li>Quarto</li>
-        <li>Quinto</li>
-      </ul>
+      <?php
+        wp_nav_menu( array(
+          'theme_location' => 'primary',
+          'menu_id' => 'primary',
+        ));
+        ?>
     </div>
   </div>
 </header>
