@@ -28,7 +28,6 @@
   <div class="container">
     <div class="brand_search">
       <a href="<?php bloginfo('url'); ?>" class="brand"><p> Compass </p></a>
-      <?php get_search_form(); ?>
     </div>
 
     <div class="box-menu">
@@ -37,7 +36,11 @@
         'theme_location' => 'primary',
         'menu_id' => 'primary',
         ) );
+
       ?>
+      <i id="app-menu" class="material-icons">
+        apps
+      </i>
     </div>
   </div>
 </header>

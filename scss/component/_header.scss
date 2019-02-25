@@ -31,39 +31,35 @@
           align-items: center;
           font-size: 25px;
         }
-
-        .search_icon {
-          position: relative;
-
-          .search {
-            height: 30px;
-            border: 1px solid #ced4da;
-            background: #F8F9FA;
-            margin-left: 60px;
-            padding-left: 20px;
-            padding-right: 30px;
-          }
-
-          .fa-search {
-            color: #748598;
-            font-size: 20px;
-            position: absolute;
-            right: 5px;
-            top: 7px;
-          }
-        }
       }
 
       .box-menu {
-        ul{
-          display:flex;
+        display: flex;
+        align-items: center;
 
-          li{
+        ul {
+          display: flex;
+
+          li {
             margin-right: 10px;
 
-            &:last-child{
+            &:last-child {
               margin-right: 0px;
             }
+
+            @media screen and (max-width: 700px){
+              display: none;
+            }
+          }
+        }
+
+        .material-icons {
+          display: none;
+
+          @media screen and (max-width: 700px) {
+            display: block;
+            font-size: 45px;
+            cursor:pointer;
           }
         }
       }

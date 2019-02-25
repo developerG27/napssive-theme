@@ -2,9 +2,16 @@
 //Al posto di rand() aggiungerò la versione
 wp_enqueue_style('style', get_stylesheet_uri(), rand());
 
-//Carico lo script
-//il nome, src, array(), la versione, true= nel footer, false= nel header
-wp_enqueue_script('script', get_template_directory_uri() . '/script/script.js', array(), rand(), false);
+//carico jquery
+add_action( 'wp_enqueue_scripts', 'add_my_script' );
+function add_my_script() {
+  wp_enqueue_script(
+    'your-script', // name your script so that you can attach other scripts and de-register, etc.
+    get_template_directory_uri() . '/script/script.js', // this is the location of your script file
+    array('jquery') // this array lists the scripts upon which your script depends
+  );
+}
+
 
 //Aggiunge le post thumbnails (Immagini)
 add_theme_support('post-thumbnails');

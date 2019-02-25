@@ -17,6 +17,7 @@ get_header();
   <div class="content">
     <div class="row">
       <div class="card card-md">
+        <?php get_search_form(); ?>
         <p>Hai cercato <?php echo $ricerca ?></p>
 
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>

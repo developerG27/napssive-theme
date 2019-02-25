@@ -8,6 +8,7 @@ get_header();
   <div class="content">
     <div class="row">
       <div class="card card-md">
+        <?php get_search_form(); ?>
         <?php //the_post_thumbnail(); ?>
         <?php the_date(); ?>
         <?php  the_category(); ?>
