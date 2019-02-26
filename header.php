@@ -4,7 +4,7 @@
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <?php wp_head() ?>
+
   <!-- Material Icon -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
@@ -20,6 +20,7 @@
     }
     ?>
   </title>
+  <?php wp_head() ?>
 </head>
 <body class="theme">
 <header class="header">

@@ -34,7 +34,10 @@ get_header();
       </div>
     </div>
   </div>
-</section>
 
+
+</section>
+<!-- Obbligatorio senno sparisce wp_head(); -->
+<?php wp_footer(); ?>
 </body>
 </html>
