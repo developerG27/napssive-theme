@@ -227,7 +227,8 @@ body.theme {
   box-shadow: 0 -3px 31px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.02); }
   .card-md img {
     height: 100px;
-    width: 100px; }
+    width: 100px;
+    object-fit: cover; }
   .card-md.news {
     width: 80%; }
     .card-md.news .form-search {
@@ -388,7 +389,8 @@ body.theme {
         box-shadow: 0 -3px 31px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.02); }
         .theme .main-container .content .row .card-md img {
           height: 100px;
-          width: 100px; }
+          width: 100px;
+          object-fit: cover; }
         .theme .main-container .content .row .card-md.news {
           width: 80%; }
           .theme .main-container .content .row .card-md.news .form-search {

@@ -20,9 +20,7 @@ get_header();
           foreach ($post_tags as $tag) {
             // Eliminato il link del tag
             //echo '<a href="'; echo bloginfo(); echo '/tag' . $tag->slug . '" class="badge ' . $tag->slug . '">' . $tag->name . '</a>';
-
             echo '<a class="badge ' . $tag->slug . '">' . $tag->name . '</a>';
-
           }
         }
         ?>

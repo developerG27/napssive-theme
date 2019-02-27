@@ -15,6 +15,7 @@
   img{
     height: 100px;
     width: 100px;
+    object-fit:cover;
   }
 
   //News
@@ -25,6 +26,7 @@
       display: block;
       min-width: 100%;
     }
+
     .box-article{
       display: flex;
       flex-direction: row;
