@@ -17,11 +17,11 @@ get_header();
   <div class="content">
     <div class="row">
       <div class="card card-md">
-        <p>Questa pagina non esiste </p>
+        <p> Questa pagina non esiste </p>
       </div>
     </div>
   </div>
 </section>
-
+<?php wp_footer(); ?>
 </body>
 </html>

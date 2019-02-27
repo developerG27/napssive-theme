@@ -25,9 +25,6 @@ function remove_footer_admin(){
   echo 'Sviluppato da <a href="http://www.wordpress.org" target="_blank">DeveloperG27</a>';
 }
 
-//rimuove la barra superiore wp_head()
-
-
 //Abitalita i blocchi avanzati di gutemberg
 function my_custom_languages($languages){
   $languages[] = array('slug' => 'rust', 'mode' => 'rust', 'label' => 'Rust');
