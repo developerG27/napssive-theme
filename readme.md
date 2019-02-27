@@ -7,4 +7,5 @@ File recenti                                    Ctrl + E
 Vedere le differenze tra un file e un altro     Ctrl + D
 Incollare tra 5 scelte                          Ctrl + Shift + V
 
-sass --watch scss/screen.scss:style.css
+Per compilare Sass                              sass --watch scss/screen.scss:style.css
+Per compilare Sass e ritorna minificato         sass --watch scss/screen.scss:style.css --style compressed

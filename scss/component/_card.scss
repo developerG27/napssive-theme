@@ -12,11 +12,18 @@
   box-shadow: 0 -3px 31px 0 rgba(0, 0, 0, .05), 0 6px 20px 0 rgba(0, 0, 0, .02);
 
   //Autore plugin
-  img{
-    height: 100px;
-    width: 100px;
-    object-fit:cover;
+  .saboxplugin-wrap{
+    margin-bottom: 0px;
+    margin-top: 50px;
+
+    img {
+      height: 100px;
+      width: 100px;
+      object-fit: cover;
+    }
   }
+
+
 
   //News
   &.news{
