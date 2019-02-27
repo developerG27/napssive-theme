@@ -20,11 +20,6 @@ register_nav_menus(array(
   'primary' => esc_html__('primary'),
 ));
 
-// Cambio del nome del footer nel backend
-function remove_footer_admin(){
-  echo 'Sviluppato da <a href="http://www.wordpress.org" target="_blank">DeveloperG27</a>';
-}
-
 //Abitalita i blocchi avanzati di gutemberg
 function my_custom_languages($languages){
   $languages[] = array('slug' => 'rust', 'mode' => 'rust', 'label' => 'Rust');

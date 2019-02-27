@@ -13,6 +13,6 @@ get_header();
         </div>
     </div>
 </section>
-
+<?php wp_footer(); ?>
 </body>
 </html>

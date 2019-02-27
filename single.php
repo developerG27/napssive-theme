@@ -18,7 +18,7 @@ get_header();
         $post_tags = get_the_tags();
         if ($post_tags) {
           foreach ($post_tags as $tag) {
-            // Eliminato il link del tag
+            //TODO: Eliminato link dal tag, bisogna creare pagina per il tag
             //echo '<a href="'; echo bloginfo(); echo '/tag' . $tag->slug . '" class="badge ' . $tag->slug . '">' . $tag->name . '</a>';
             echo '<a class="badge ' . $tag->slug . '">' . $tag->name . '</a>';
           }
