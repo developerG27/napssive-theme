@@ -17,6 +17,5 @@
     <?php endforeach; ?>
     <?php wp_reset_query(); ?>
 
-
   </ul>
 </aside>

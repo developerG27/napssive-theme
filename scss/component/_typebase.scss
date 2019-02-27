@@ -40,6 +40,10 @@
     font-size: 3em;
     line-height: 1.5em !important;
     margin-top: 0px;
+
+    @media screen and(max-width: 320px){
+      font-size: 1.5em;
+    }
   }
 
   h4 {

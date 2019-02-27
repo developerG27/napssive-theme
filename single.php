@@ -9,11 +9,10 @@ get_header();
     <div class="row">
       <div class="card card-md">
         <?php the_post_thumbnail(); ?>
-        <?php the_date(); ?>
-        <?php  the_category(); ?>
-
         <?php the_post(); ?>
         <h3> <?php the_title(); ?> </h3>
+        <p> <?php the_date(); ?></p>
+
         <?php
         $post_tags = get_the_tags();
         if ($post_tags) {
@@ -24,6 +23,7 @@ get_header();
           }
         }
         ?>
+
         <p> <?php the_content(); ?> </p>
       </div>
     </div>
