@@ -1,10 +1,10 @@
-var $ = jQuery;
-$(document).ready(function(){
-    console.log('ready')
+// var $ = jQuery;
+// $(document).ready(function(){
+//     console.log('ready')
 
-    $('#app-menu').on('click',function(){
-        console.log('hai fatto click')
+//     $('#app-menu').on('click',function(){
+//         console.log('hai fatto click')
 
-        $('#secondary-menu').toggleClass('none');
-    })
-})
+//         $('#secondary-menu').toggleClass('none');
+//     })
+// })

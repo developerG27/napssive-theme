@@ -36,6 +36,11 @@
       .box-menu {
         display: flex;
         align-items: center;
+        position: relative;
+
+        .fa-bars{
+          display: none;
+        }
 
         ul {
           display: flex;
@@ -46,39 +51,28 @@
             &:last-child {
               margin-right: 0px;
             }
+          }
+        }
 
-            @media screen and (max-width: 700px){
-              display: none;
+        @media screen and (max-width: 700px){
+          .fa-bars{
+            display: block;
+            font-size: 1.5em;
+          }
+
+          ul{
+            flex-direction: column;
+            background: #fff;
+            position: absolute;
+            right: 1%;
+            bottom: -300px;
+            box-shadow: 0 -3px 31px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.02);
+            padding: 30px 40px;
+
+            li{
+              padding: 10px 0px;
             }
           }
-        }
-
-        .material-icons {
-          display: none;
-
-          @media screen and (max-width: 700px) {
-            display: block;
-            font-size: 45px;
-            cursor:pointer;
-          }
-        }
-      }
-
-      .secondary-menu{
-        background: #fff;
-        height: 500px;
-        border: 2px solid #e6e6e6;
-        border-radius: 0px 0px 0px 5px;
-        border-right: 0px !important;
-        border-top: 0px !important;
-        position: absolute;
-        right: 0px;
-        top: 70px;
-        width: 50%;
-        padding: 40px;
-
-        @media screen and (max-width: 425px){
-          width:90%;
         }
       }
     }
