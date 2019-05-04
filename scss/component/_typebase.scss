@@ -1,4 +1,6 @@
 .theme {
+  font-family: 'Open Sans', sans-serif !important;
+
   ul, ol {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
@@ -19,7 +21,6 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: sans-serif;
     margin-bottom: 0;
     line-height: 1.5rem;
   }

@@ -1,6 +1,5 @@
 body.theme {
   margin: 0px;
-  font-family: "Poppins", sans-serif;
   box-sizing: border-box;
 }
 body.theme ul {
@@ -33,6 +32,9 @@ body.theme a:active {
   box-sizing: border-box;
 }
 
+.theme {
+  font-family: "Open Sans", sans-serif !important;
+}
 .theme ul, .theme ol {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
@@ -49,7 +51,6 @@ body.theme a:active {
   margin-top: 1em;
 }
 .theme h1, .theme h2, .theme h3, .theme h4, .theme h5, .theme h6 {
-  font-family: sans-serif;
   margin-bottom: 0;
   line-height: 1.5rem;
 }
@@ -148,7 +149,6 @@ body.theme a:active {
   overflow: scroll;
   position: sticky !important;
   top: 70px;
-  font-family: "Poppins";
   z-index: 30;
 }
 @media screen and (max-width: 960px) {
