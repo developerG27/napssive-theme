@@ -369,6 +369,8 @@ body.theme a:active {
   top: 0px;
   z-index: 10;
   display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
   align-items: center;
 }
 .theme .header .container {
@@ -417,6 +419,7 @@ body.theme a:active {
     font-size: 1.5em;
   }
   .theme .header .container .box-menu ul {
+    display: none;
     flex-direction: column;
     background: #fff;
     position: absolute;
@@ -427,6 +430,9 @@ body.theme a:active {
   }
   .theme .header .container .box-menu ul li {
     padding: 10px 0px;
+  }
+  .theme .header .container .box-menu ul.visible {
+    display: block !important;
   }
 }
 
