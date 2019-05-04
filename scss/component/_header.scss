@@ -5,40 +5,33 @@
     position: sticky;
     top: 0px;
     z-index: 10;
-     @include flexbox(flex-start, row, center);
+    @include flexbox(flex-start, row, center);
 
     .container {
       width: 98%;
       margin: auto;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
+      @include flexbox(space-between, row, center);
       padding: 0px;
 
       .brand_search {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+        @include flexbox(space-between, row, center);
         width: 28%;
 
         .brand {
           width: 200px;
           height: 42px;
-          display: flex;
-          align-items: center;
+          @include flexbox(flex-start, row, center);
           font-size: 25px;
         }
       }
 
       .box-menu {
-        display: flex;
-        align-items: center;
+        @include flexbox(flex-start, row, center);
         position: relative;
 
         .fa-bars{
           display: none;
+          cursor: pointer;
         }
 
         ul {
@@ -76,7 +69,6 @@
               display: block !important;
             }
           }
-          
         }
       }
     }

@@ -151,6 +151,9 @@ body.theme a:active {
   top: 70px;
   z-index: 30;
 }
+.theme .aside::-webkit-scrollbar {
+  width: 0 !important;
+}
 @media screen and (max-width: 960px) {
   .theme .aside {
     width: 22%;
@@ -183,9 +186,6 @@ body.theme a:active {
     font-size: 1.2em;
     padding: 10px !important;
   }
-}
-.theme .aside::-webkit-scrollbar {
-  width: 0 !important;
 }
 
 .theme .box-badge {
@@ -377,15 +377,15 @@ body.theme a:active {
   width: 98%;
   margin: auto;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  flex-direction: row;
   align-items: center;
   padding: 0px;
 }
 .theme .header .container .brand_search {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  flex-direction: row;
   align-items: center;
   width: 28%;
 }
@@ -393,16 +393,21 @@ body.theme a:active {
   width: 200px;
   height: 42px;
   display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
   align-items: center;
   font-size: 25px;
 }
 .theme .header .container .box-menu {
   display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
   align-items: center;
   position: relative;
 }
 .theme .header .container .box-menu .fa-bars {
   display: none;
+  cursor: pointer;
 }
 .theme .header .container .box-menu ul {
   display: flex;
@@ -480,7 +485,6 @@ body.theme a:active {
 .theme .main-container {
   display: flex;
   justify-content: space-between;
-  position: relative;
 }
 .theme .main-container .content {
   width: calc(100vw - 240px);
