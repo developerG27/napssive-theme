@@ -1,0 +1,53 @@
+<header class="header">
+  <div class="container">
+    <div class="brand_search">
+      <a href="<?php bloginfo('url'); ?>" class="brand">
+        <p> Compass </p>
+      </a>
+    </div>
+
+    <div class="box-menu">
+      <i id="app-menu" class="material-icons">
+        apps
+      </i>
+    </div>
+
+    <div id="secondary-menu" class="secondary-menu none">
+
+    </div>
+  </div>
+</header>
+
+<section class="main-container">
+  <aside class="aside">
+  </aside>
+
+  <div class="content">
+    <div class="row">
+      <div class="card card-md">
+      </div>
+    </div>
+  </div>
+</section>
+
+<aside class="aside">
+  <ul>
+    <li>
+      <a href="<?php the_permalink(); ?>"> <?php the_title(); ?>
+      </a>
+    </li>
+  </ul>
+</aside>
+
+<!-- Footer -->
+<footer class="end">
+  <div class="container">
+    <a href="<?php echo home_url(); ?>">
+      <p class="copyright"> Blog &#169; 2019 </p>
+    </a>
+  </div>
+</footer>
+
+</body>
+
+</html>
