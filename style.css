@@ -33,14 +33,14 @@ body.theme a:active {
 }
 
 .theme {
-  font-family: "Open Sans", sans-serif !important;
+  font-family: "Open Sans", sans-serif;
 }
 .theme ul, .theme ol {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
 .theme ul li, .theme ol li {
-  line-height: 1em !important;
+  line-height: 1em;
 }
 .theme ul ul, .theme ol ul, .theme ul ol, .theme ol ol {
   margin-top: 0;
@@ -66,7 +66,7 @@ body.theme a:active {
 }
 .theme h3 {
   font-size: 3em;
-  line-height: 1.5em !important;
+  line-height: 1.5em;
   margin-top: 0px;
 }
 @media screen and (max-width: 320px) {
@@ -331,9 +331,6 @@ body.theme a:active {
 .card-2 {
   width: 20%;
 }
-.card-1 {
-  width: 10%;
-}
 
 .card-md.news {
   width: 80%;
@@ -512,7 +509,7 @@ body.theme a:active {
 }
 @media screen and (max-width: 960px) {
   .theme .main-container .content {
-    padding: 0% !important;
+    padding: 0%;
   }
 }
 @media screen and (max-width: 960px) {
@@ -567,9 +564,6 @@ body.theme a:active {
 .theme .main-container .content .row .card-2 {
   width: 20%;
 }
-.theme .main-container .content .row .card-1 {
-  width: 10%;
-}
 .theme .main-container .content .row .card-md.news {
   width: 80%;
 }
@@ -616,7 +610,7 @@ body.theme a:active {
 }
 @media screen and (max-width: 960px) {
   .theme .main-container .content .row {
-    padding: 10px !important;
+    padding: 10px;
   }
 }
 

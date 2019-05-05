@@ -1,5 +1,5 @@
 .theme {
-  font-family: 'Open Sans', sans-serif !important;
+  font-family: 'Open Sans', sans-serif;
 
   ul, ol {
     margin-top: 1.5rem;
@@ -7,7 +7,7 @@
   }
 
   ul li, ol li {
-    line-height: 1em !important;
+    line-height: 1em;
   }
 
   ul ul, ol ul, ul ol, ol ol {
@@ -39,7 +39,7 @@
 
   h3 {
     font-size: 3em;
-    line-height: 1.5em !important;
+    line-height: 1.5em;
     margin-top: 0px;
 
     @media screen and(max-width: 320px){
