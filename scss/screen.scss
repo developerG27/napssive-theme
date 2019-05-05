@@ -26,6 +26,7 @@
         display: flex;
         justify-content: center;
         margin: auto;
+        flex-wrap: wrap;
 
         @import 'component/card';
 
