@@ -28,6 +28,11 @@
         margin: auto;
         flex-wrap: wrap;
 
+        &.blog{
+          max-width: 1300px !important;
+          justify-content: space-between;
+        }
+
         @import 'component/card';
 
         @media screen and (max-width: 960px) {
