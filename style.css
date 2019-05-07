@@ -296,7 +296,7 @@ body.theme a:active {
 }
 
 .card {
-  border-radius: 5px;
+  border-radius: 3px;
   padding: 40px;
   box-sizing: border-box;
   margin-bottom: 30px;
@@ -330,6 +330,26 @@ body.theme a:active {
 }
 .card-2 {
   width: 20%;
+}
+.card .article {
+  width: 350px;
+  height: 250px;
+}
+.card .article.thumb {
+  position: relative;
+}
+.card .article.thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(60%);
+}
+.card .article.thumb p {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
 }
 
 .card-md.news {
@@ -529,7 +549,7 @@ body.theme a:active {
   flex-wrap: wrap;
 }
 .theme .main-container .content .row .card {
-  border-radius: 5px;
+  border-radius: 3px;
   padding: 40px;
   box-sizing: border-box;
   margin-bottom: 30px;
@@ -563,6 +583,26 @@ body.theme a:active {
 }
 .theme .main-container .content .row .card-2 {
   width: 20%;
+}
+.theme .main-container .content .row .card .article {
+  width: 350px;
+  height: 250px;
+}
+.theme .main-container .content .row .card .article.thumb {
+  position: relative;
+}
+.theme .main-container .content .row .card .article.thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(60%);
+}
+.theme .main-container .content .row .card .article.thumb p {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
 }
 .theme .main-container .content .row .card-md.news {
   width: 80%;

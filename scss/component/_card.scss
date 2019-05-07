@@ -1,5 +1,5 @@
 .card {
-  border-radius: 5px;
+  border-radius: 3px;
   padding: 40px;
   box-sizing: border-box;
   margin-bottom: 30px;
@@ -41,6 +41,32 @@
 
   &-2{
     width: 20%;
+  }
+  
+  .article{
+    width: 350px;
+    height: 250px;
+
+    &.thumb{
+      position: relative;
+
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: brightness(60%);
+      }
+
+      p{
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        text-align: center;
+        color: #ffffff;
+      }
+    }
+
+    
   }
 }
 
